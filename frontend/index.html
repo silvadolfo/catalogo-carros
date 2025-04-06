@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Carros</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilização do logotipo */
+    .logo {
+      max-width: 150px;
+      height: auto;
+    }
+    /* Estilização do cabeçalho e rodapé */
+    header, footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fa;
+      padding: 10px 0;
+    }
+    footer {
+      margin-top: 20px;
+      border-top: 1px solid #e9ecef;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com o logotipo -->
+  <header>
+    <img src="img/logo.png" alt="Logo Maciel Veículos" class="logo">
+  </header>
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <h1>Catálogo de Carros</h1>
+
+    <!-- Lista de carros -->
+    <ul id="lista-carros" class="list-group"></ul>
+
+    <!-- Formulário de pesquisa -->
+    <h2>Pesquisar Carros</h2>
+    <form id="form-pesquisa">
+      <div class="form-group">
+        <label for="marca-pesquisa">Marca:</label>
+        <select class="form-control" id="marca-pesquisa" name="marca">
+          <option value="">Selecione a marca</option>
+          <!-- As opções serão adicionadas aqui pelo JavaScript -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="modelo-pesquisa">Modelo:</label>
+        <input type="text" class="form-control" id="modelo-pesquisa" name="modelo">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Pesquisar</button>
+    </form>
+  </div>
+
+  <!-- Rodapé com o logotipo -->
+  <footer>
+    <img src="img/logo.png" alt="Logo Maciel Veículos" class="logo">
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

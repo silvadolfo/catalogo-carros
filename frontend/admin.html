@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Painel de Administração</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilização do logotipo */
+    .logo {
+      max-width: 150px;
+      height: auto;
+    }
+    /* Estilização do cabeçalho e rodapé */
+    header, footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fa;
+      padding: 10px 0;
+    }
+    footer {
+      margin-top: 20px;
+      border-top: 1px solid #e9ecef;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com o logotipo -->
+  <header>
+    <img src="logo.png" alt="Logo Maciel Veículos" class="logo">
+  </header>
+
+  <!-- Conteúdo principal -->
+  <div class="container">
+    <h1>Painel de Administração</h1>
+
+    <h2>Cadastrar Novo Carro</h2>
+    <form id="form-cadastro">
+      <div class="form-group">
+        <label for="marca">Marca:</label>
+        <select class="form-control" id="marca" name="marca" required>
+          <option value="">Selecione a marca</option>
+          <!-- As opções serão adicionadas aqui pelo JavaScript -->
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="modelo">Modelo:</label>
+        <input type="text" class="form-control" id="modelo" name="modelo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="ano">Ano:</label>
+        <input type="number" class="form-control" id="ano" name="ano" required>
+      </div>
+
+      <div class="form-group">
+        <label for="quilometragem">Quilometragem:</label>
+        <input type="number" class="form-control" id="quilometragem" name="quilometragem" required>
+      </div>
+
+      <div class="form-group">
+        <label for="preco">Preço:</label>
+        <input type="number" class="form-control" id="preco" name="preco" required>
+      </div>
+
+      <div class="form-group">
+        <label for="cor">Cor:</label>
+        <input type="text" class="form-control" id="cor" name="cor" required>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+
+    <h2>Carros Cadastrados</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Ano</th>
+          <th>Quilometragem</th>
+          <th>Preço</th>
+          <th>Cor</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="lista-carros-admin">
+        <!-- Os carros serão adicionados aqui pelo JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Rodapé com o logotipo -->
+  <footer>
+    <img src="logo.png" alt="Logo Maciel Veículos" class="logo">
+  </footer>
+
+  <script src="admin.js"></script>
+</body>
+</html>

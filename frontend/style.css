@@ -1,0 +1,36 @@
+/* frontend/style.css */
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  #carros-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .carro {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+  }
+
+
+  header, footer {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    background-color: #343a40; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 20px 0; /* Espaçamento interno (topo e base) */
+  }
+  
+  header img, footer img {
+    filter: drop-shadow(2px 4px 6px gray); /* Adiciona um leve sombreamento ao logo */
+  }
+
+  .logo {
+    max-width: 200px; /* Define a largura máxima do logotipo */
+    height: auto; /* Mantém a proporção da imagem */
+  }
